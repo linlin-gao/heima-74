@@ -8,13 +8,8 @@
 <script>
 
 export default {
-  name: 'app',
-  components: {
-
-  }
+  name: 'app'
 }
 </script>
 
-<style lang="less">
-
-</style>
+<style lang="less"></style>
