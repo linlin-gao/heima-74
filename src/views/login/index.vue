@@ -21,15 +21,15 @@ export default {}
     /* center / cover : '背景图定位/背景图尺寸' */
     background:url(../../assets/images/login_bg.jpg) no-repeat center / cover;
     .login-box{
-        width: 400px;
-        height: 300px;
+        width: 600px;
+        height: 500px;
         position: absolute;
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
         img{
             display: block;
-            width: 200px;
+            width: 300px;
             margin: 10px auto;
         }
     }
