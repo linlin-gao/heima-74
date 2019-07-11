@@ -54,15 +54,20 @@ export default {
         if (valid) {
           this.$http
             .post(
+              // axios 是基于promise来封装的post()返回一个promise对象
               'http://ttapi.research.itcast.cn/mp/v1_0/authorizations',
               this.loginForm
             )
             .then(res => {
               // res 是响应对象 包含里 后台返回的数据 res.data
-              console.log(res.data)
+              // console.log(res.data)
+              // 登陆成功之后做的事:
               // 1 跳转至首页
               // 2 保存用户信息 用来判断登陆的状态
               this.$router.push('/')
+            }).catch(() => {
+              // 这里需要提示错误信息
+              this.$message.error('出大事了!!!')
             })
         }
       })
