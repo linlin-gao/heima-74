@@ -55,7 +55,7 @@ export default {
           this.$http
             .post(
               // axios 是基于promise来封装的post()返回一个promise对象
-              'http://ttapi.research.itcast.cn/mp/v1_0/authorizations',
+              'authorizations',
               this.loginForm
             )
             .then(res => {
