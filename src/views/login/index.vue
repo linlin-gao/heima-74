@@ -60,7 +60,7 @@ export default {
             )
             .then(res => {
               // res 是响应对象 包含里 后台返回的数据 res.data
-              // console.log(res.data)
+              console.log(res.data)
               // 登陆成功之后做的事:
               // 1 跳转至首页
               // 2 保存用户信息 用来判断登陆的状态
