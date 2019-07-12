@@ -33,8 +33,8 @@ export default {
   data () {
     return {
       loginForm: {
-        mobile: '',
-        code: ''
+        mobile: '13911111111',
+        code: '246810'
       },
       loginRules: {
         mobile: [
@@ -64,6 +64,13 @@ export default {
               // 登陆成功之后做的事:
               // 1 跳转至首页
               // 2 保存用户信息 用来判断登陆的状态
+              // sessionStorage 是Bom对象 全局对象 作用是保存数据
+              // 是有 有效期的 关闭浏览器后就会失效
+              // sessionStorage.setItem(ket, value) value必须是字符串
+              // sessionStorage.getItem(ket) 获取数据
+              // sessionStorage.romoveItem(ket) 删除数据
+              // sessionStorage.clear() 清空所有的数据
+              window.sessionStorage.setItem('hm74-toutiao', JSON.stringify(res.data.data))
               this.$router.push('/')
             }).catch(() => {
               // 这里需要提示错误信息
