@@ -6,7 +6,7 @@
                 <el-menu
                     router
                     style="border-right:none"
-                    default-active="index"
+                    default-active="/"
                     background-color="#002033"
                     text-color="#fff"
                     active-text-color="#ffd04b"
