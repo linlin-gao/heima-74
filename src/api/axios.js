@@ -20,6 +20,7 @@ instance.interceptors.request.use(config => {
 }, error => {
   return Promise.reject(error)
 })
+
 // 响应拦截器
 instance.interceptors.response.use(response => response, error => {
   // 做一些事情
