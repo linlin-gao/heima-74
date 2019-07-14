@@ -16,7 +16,7 @@
                         <i class="el-icon-s-home"></i>
                         <span slot="title">首页</span>
                     </el-menu-item>
-                    <el-menu-item index="article">
+                    <el-menu-item index="artice">
                         <i class="el-icon-document"></i>
                         <span slot="title">内容管理</span>
                     </el-menu-item>
@@ -44,7 +44,7 @@
             </el-aside>
             <el-container>
                 <el-header class="my-header">
-                    <span class="el-icon-s-fold" @click="toggleMenu"></span>
+                    <span class="el-icon-s-fold" @click="toggleMenu()"></span>
                     <span class="text">江苏传智播客科技教育有限公司</span>
                     <el-dropdown style="float:right">
                         <span class="el-dropdown-link">
@@ -76,7 +76,7 @@ export default {
     }
   },
   created () {
-    const user = JSON.parse(window.sessionStorage.getItem('74hm-toutiao'))
+    const user = JSON.parse(window.sessionStorage.getItem('hm74-toutiao'))
     this.avater = user.photo
     this.name = user.name
   },

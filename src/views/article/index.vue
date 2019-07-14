@@ -1,5 +1,5 @@
 <template>
-    <div class="article-container">
+    <div class="artice-container">
         <!-- 筛选区域 -->
         <el-card>
             <div slot="header">
@@ -17,12 +17,12 @@
                 </el-form-item>
                 <el-form-item label="频道:">
                     <el-select v-model="resParams.channel_id" placeholder="请选择">
-                        <el-potion
+                        <el-option
                         v-for="item in channelOptions"
                         :key="item.id"
                         :label="item.name"
                         :value="item.id">
-                        </el-potion>
+                        </el-option>
                     </el-select>
                 </el-form-item>
                 <el-form-item label="日期:">
@@ -30,8 +30,9 @@
                     v-model="dateValues"
                     type="daterange"
                     range-separator="至"
-                    start-placeholde="开始日期"
-                    end-placeholde="结束日期"></el-date-picker>
+                    start-placeholder="开始日期"
+                    end-placeholder="结束日期"
+                    ></el-date-picker>
                 </el-form-item>
                 <el-form-item style="margin-left: 43px">
                     <el-button type="primary">筛选</el-button>
