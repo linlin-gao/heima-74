@@ -40,8 +40,7 @@
             </el-form>
         </el-card>
         <!-- 结果区域 -->
-        <el-card>
-        </el-card>
+        <el-card></el-card>
     </div>
 </template>
 
