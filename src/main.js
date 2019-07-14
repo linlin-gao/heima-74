@@ -6,7 +6,10 @@ import 'element-ui/lib/theme-chalk/index.css'
 
 import router from '@/router'
 
+import components from '@/components'
+
 import axios from '@/api/axios'
+Vue.use(components)
 Vue.prototype.$http = axios
 
 Vue.use(ElementUI)

@@ -3,10 +3,7 @@
         <!-- 筛选区域 -->
         <el-card>
             <div slot="header">
-                <el-breadcrumb separator-class="el-icon-arrow-right">
-                    <el-breadcrumb-item :to="{path: '/'}">首页</el-breadcrumb-item>
-                    <el-breadcrumb-item>内容管理</el-breadcrumb-item>
-                </el-breadcrumb>
+                <my-bread>内容区域</my-bread>
             </div>
             <el-form :model="resParams">
                 <el-form-item label="状态:">
@@ -24,7 +21,8 @@
                         v-for="item in channelOptions"
                         :key="item.id"
                         :label="item.name"
-                        :value="item.id"></el-potion>
+                        :value="item.id">
+                        </el-potion>
                     </el-select>
                 </el-form-item>
                 <el-form-item label="日期:">
@@ -41,11 +39,13 @@
             </el-form>
         </el-card>
         <!-- 结果区域 -->
-        <el-card></el-card>
+        <el-card>
+        </el-card>
     </div>
 </template>
 
 <script>
+
 export default {
   data () {
     return {
