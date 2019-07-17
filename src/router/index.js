@@ -6,6 +6,8 @@ import Home from '@/views/home'
 import Welcome from '@/views/welcome'
 import Article from '@/views/article'
 import NotFound from '@/views/404'
+import Image from '@/views/image'
+import Publish from '@/views/publish'
 
 Vue.use(VueRouter)
 
@@ -17,7 +19,9 @@ const router = new VueRouter({
       component: Home,
       children: [
         { name: 'welcome', path: '/', component: Welcome },
-        { name: 'article', path: '/article', component: Article }
+        { name: 'article', path: '/article', component: Article },
+        { name: 'iamge', path: '/image', component: Image },
+        { name: 'publish', path: '/publish', component: Publish }
       ]
     },
     // ... 很多规则
