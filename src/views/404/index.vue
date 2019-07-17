@@ -1,21 +1,18 @@
 <template>
-    <div class="container">
-    </div>
+  <div class="container"></div>
 </template>
 
 <script>
-export default {
-
-}
+export default {}
 </script>
 
-<style>
-    .container{
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background: url(../../assets/images/404.png) no-repeat center;
-    }
+<style scoped lang='less'>
+.container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../../assets/images/404.png) no-repeat center / cover;
+}
 </style>

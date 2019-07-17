@@ -1,17 +1,15 @@
 <template>
-    <div class="welcome">
-        <img src="../../assets/images/welcome.jpg" alt="" width="50%" height="50%">
-    </div>
+  <div class='container'>
+    <img src="../../assets/images/welcome.jpg" alt="">
+  </div>
 </template>
 
 <script>
-export default {
-
-}
+export default {}
 </script>
 
-<style>
-    .welcome{
-        text-align: center;
-    }
+<style scoped lang='less'>
+.container{
+  text-align: center;
+}
 </style>
