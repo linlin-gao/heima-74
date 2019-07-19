@@ -86,9 +86,9 @@ export default {
   methods: {
     // 删除图片
     delImage (id) {
-      this.$confirm('此操作将永久删除该图片, 是否继续?', '温馨提示', {
-        confirmButtonText: '确定',
-        cancelButtonText: '取消',
+      this.$confirm('你踏马要删掉劳资?', '胆肥了你?', {
+        confirmButtonText: '去死吧',
+        cancelButtonText: '点这个',
         type: 'warning'
       }).then(async () => {
         await this.$http.delete('user/images/' + id)
